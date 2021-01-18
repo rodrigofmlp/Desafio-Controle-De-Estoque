@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <span class="navbar-brand mb-0 h1">Cadastro de produto</span>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="row_form">
+            <div class="col-sm">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nome</label>
+                        <input type="text" class="form-control" id="txtName" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Digite o nome do produto.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Marca</label>
+                        <input type="text" class="form-control" id="txtBrand">
+                        <small id="emailHelp" class="form-text text-muted">Digite a marca do produto.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Quantidade</label>
+                        <input type="number" class="form-control" id="txtQuantity">
+                        <small id="emailHelp" class="form-text text-muted">Digite quantos produtos são.</small>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label for="exampleInputPassword1">O produto é perecível?</label>
+                        <br>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="false" id="checkBox">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Se o produto for perecível, marque a caixa.
+                        </label>
+                      </div>
+                    <button type="submit" id="btnRegister" class="btn btn-primary">Criar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5" id="productsBoard">
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Editor de produtos.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nome</label>
+                    <input type="text" class="form-control" id="txtNameModal" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Digite o nome do produto.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Marca</label>
+                    <input type="text" class="form-control" id="txtBrandModal">
+                    <small id="emailHelp" class="form-text text-muted">Digite a marca do produto.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Quantidade</label>
+                    <input type="number" class="form-control" id="txtQuantityModal">
+                    <small id="emailHelp" class="form-text text-muted">Digite quantos produtos são.</small>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label for="exampleInputPassword1">O produto é perecível?</label>
+                    <br>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkboxModal" value="false" id="checkBoxModal">
+                    <label class="form-check-label" for="defaultCheck1">
+                    Se o produto for perecível, marque a caixa.
+                    </label>
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary btn-update">Salvar alterações</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="./bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="../src/index.js"></script>
+</body>
+
+</html>
